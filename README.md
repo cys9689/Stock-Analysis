@@ -13,7 +13,6 @@ tickerIndex = 0
     Dim tickerStartingPrices(12) As Single
     Dim tickerEndingPrices(12) As Single
     
-    'initialize ticker volumes to zero
     For i = 0 To 11
         tickerVolumes(i) = 0
     Next i
@@ -35,4 +34,6 @@ tickerIndex = 0
             tickerIndex = tickerIndex + 1
             
         End If
-        '''
+  '''
+  
+  We create a tickerIndex start from zero checking and utlizing the fact that the ticker was in alphabet order. We loop through the column once and check whether the ticker name of the column A fitting the tickers(tickerIndex) or not. if not the starting price will be the cells value. Similar with the starting price, the ending price use the same properties. 
